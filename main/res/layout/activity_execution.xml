@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        style="@style/width_match_parent_max"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="5sp">
+
+            <Button
+                android:id="@+id/settings_button_save"
+                android:text="@string/house_button_save"
+                android:layout_marginRight="5sp"
+                android:background="@color/colorGreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/settings_button_cancel"
+                android:text="@string/house_button_cancel"
+                android:layout_marginLeft="5sp"
+                android:background="@color/colorRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5sp">
+
+            <TextView
+                android:text="@string/settings_text_dealercard"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorG4"
+                android:textSize="17sp"
+                android:paddingTop="10sp"/>
+
+            <Spinner
+                android:id="@+id/settings_spinner_dealer"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:entries="@array/settings_cards"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown">
+
+            </Spinner>
+
+            <TextView
+                android:text="@string/settings_text_playercard1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/settings_spinner_dealer"
+                android:textColor="@color/colorG4"
+                android:textSize="17sp"
+                android:paddingTop="10sp" />
+
+            <Spinner
+                android:id="@+id/settings_spinner_player1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/settings_spinner_dealer"
+                android:entries="@array/settings_cards"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown">
+            </Spinner>
+
+            <TextView
+                android:text="@string/settings_text_playercard2"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/settings_spinner_player1"
+                android:textColor="@color/colorG4"
+                android:textSize="17sp"
+                android:paddingTop="10sp" />
+
+            <Spinner
+                android:id="@+id/settings_spinner_player2"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/settings_spinner_player1"
+                android:entries="@array/settings_cards"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown">
+            </Spinner>
+
+            <TextView
+                android:text="@string/settings_text_numberhands"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/settings_spinner_player2"
+                android:textColor="@color/colorG4"
+                android:textSize="17sp"
+                android:paddingTop="10sp" />
+
+            <Spinner
+                android:id="@+id/settings_spinner_executions"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/settings_spinner_player2"
+                android:entries="@array/settings_executions"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown">
+            </Spinner>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <GridLayout
+        android:id="@+id/grid_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3">
+
+        <RelativeLayout
+            android:layout_columnSpan="3"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="fill"
+            android:padding="5sp">
+
+            <Button
+                android:id="@+id/button_file_load"
+                android:gravity="center"
+                android:text="Load"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5sp"
+                android:background="@color/colorAqua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/button_file_save"
+                android:text="Save"
+                android:layout_toLeftOf="@id/button_file_load"
+                android:layout_marginRight="5sp"
+                android:background="@color/colorGreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/text_file_read"
+                android:text="Untitled"
+                android:minHeight="48sp"
+                android:maxHeight="48sp"
+                android:background="@color/colorG6"
+                android:layout_toLeftOf="@id/button_file_save"
+                android:layout_marginRight="10sp"
+                android:padding="5sp"
+                android:textSize="20sp"
+                android:lines="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_columnSpan="3"
+            android:stretchColumns="*">
+            <TableRow>
+                <TextView
+                    android:id="@+id/main_select_house"
+                    android:text="@string/main_select_house"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="100sp"
+                    android:textStyle="bold"
+                    android:background="@color/colorPurple"/>
+                <TextView
+                    android:id="@+id/main_select_player"
+                    android:text="@string/main_select_player"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="100sp"
+                    android:textStyle="bold"
+                    android:background="@color/colorBlue"/>
+                <TextView
+                    android:id="@+id/main_select_execution"
+                    android:text="@string/main_select_execution"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="100sp"
+                    android:textStyle="bold"
+                    android:background="@color/colorOrange"/>
+            </TableRow>
+        </TableLayout>
+
+        <FrameLayout
+            android:id="@+id/fragment_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:layout_columnSpan="3"/>
+
+    </GridLayout>
+
+
+</ScrollView>

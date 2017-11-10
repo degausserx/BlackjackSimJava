@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">BlackjackFact</string>
+
+    <string name="main_select_player">Player Strat</string>
+    <string name="main_select_house">House Rules</string>
+    <string name="main_select_execution">Execution</string>
+    <string name="main_select_settings">Settings</string>
+    <string name="main_button_start">Start</string>
+
+    <string name="main_dialog_title">Save settings</string>
+    <string name="main_dialog_hint">Name</string>
+
+    <string name="switch_on">On</string>
+    <string name="switch_off">Off</string>
+
+    <string-array name="house_decks_options">
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+        <item>Four</item>
+        <item>Six</item>
+        <item>Eight</item>
+    </string-array>
+    <string-array name="house_split_options">
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+        <item>Unlimited</item>
+    </string-array>
+
+    <string name="house_button_save">Save</string>
+    <string name="house_button_cancel">Cancel</string>
+    <string name="house_text_decks">Decks:</string>
+    <string name="house_text_hole">Hole card:</string>
+    <string name="house_text_draw17">Dealer draws on soft 17:</string>
+    <string name="house_text_doublesoft">Double on soft hands:</string>
+    <string name="house_text_maxsplits">Maximum splits:</string>
+    <string name="house_text_splitacesone">Split aces one card:</string>
+    <string name="house_text_splitacesnobjs">Split aces no blackjacks:</string>
+    <string name="house_text_resplitaces">Resplit aces:</string>
+    <string name="house_text_surrender">Surrender available:</string>
+    <string name="house_text_surrendervsace">Surrender against ace:</string>
+    <string name="house_text_surrenderearly">Early surrender:</string>
+
+    <string name="settings_text_numberhands">Executions:</string>
+    <string name="settings_text_dealercard">Dealer card:</string>
+    <string name="settings_text_playercard1">Player card:</string>
+    <string name="settings_text_playercard2">Player card:</string>
+
+    <string-array name="settings_cards">
+        <item>None</item>
+        <item>Two</item>
+        <item>Three</item>
+        <item>Four</item>
+        <item>Five</item>
+        <item>Six</item>
+        <item>Seven</item>
+        <item>Eight</item>
+        <item>Nine</item>
+        <item>Ten</item>
+        <item>Ace</item>
+    </string-array>
+
+    <string-array name="settings_executions">
+        <item>1,000</item>
+        <item>10,000</item>
+        <item>100,000</item>
+        <item>1,000,000</item>
+        <item>10,000,000</item>
+        <item>50,000,000</item>
+        <item>100,000,000</item>
+    </string-array>
+
+    <string name="load_button_load">Load</string>
+    <string name="load_button_cancel">Cancel</string>
+    <string name="load_button_delete">Delete</string>
+    <string name="delete_dialog_title">Delete set: </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

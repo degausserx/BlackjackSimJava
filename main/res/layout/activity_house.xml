@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbarStyle="outsideOverlay"
+    android:scrollbarAlwaysDrawVerticalTrack="false"
+    android:scrollbarAlwaysDrawHorizontalTrack="false">
+
+    <LinearLayout
+        style="@style/width_match_parent_max"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="5sp">
+
+            <Button
+                android:id="@+id/house_button_save"
+                android:text="@string/house_button_save"
+                android:layout_marginRight="5sp"
+                android:background="@color/colorGreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/house_button_cancel"
+                android:text="@string/house_button_cancel"
+                android:layout_marginLeft="5sp"
+                android:background="@color/colorRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5sp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/house_text_decks"
+                android:textColor="@color/colorG4"
+                android:textSize="17sp"
+                android:paddingTop="10sp"/>
+
+            <Spinner
+                android:id="@+id/house_spinner_decks"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:entries="@array/house_decks_options"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown">
+            </Spinner>
+
+            <Switch
+                android:id="@+id/house_hole_card"
+                android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/house_spinner_decks"
+                android:layout_alignParentRight="true"
+                android:switchMinWidth="70sp"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/house_spinner_decks"
+                android:textSize="17sp"
+                android:textColor="@color/colorG4"
+                android:text="@string/house_text_hole"
+                android:paddingTop="5sp"/>
+
+            <Switch
+                android:id="@+id/house_draw_17"
+                android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/house_hole_card"
+                android:layout_alignParentRight="true"
+                android:switchMinWidth="70sp"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/house_hole_card"
+                android:textSize="17sp"
+                android:textColor="@color/colorG4"
+                android:text="@string/house_text_draw17"
+                android:paddingTop="5sp"/>
+
+            <Switch
+                android:id="@+id/house_double_soft"
+                android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/house_draw_17"
+                android:layout_alignParentRight="true"
+                android:switchMinWidth="70sp"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/house_draw_17"
+                android:textSize="17sp"
+                android:textColor="@color/colorG4"
+                android:text="@string/house_text_doublesoft"
+                android:paddingTop="5sp"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/house_text_maxsplits"
+                android:layout_below="@id/house_double_soft"
+                android:textSize="17sp"
+                android:textColor="@color/colorG4"
+                android:paddingTop="10sp" />
+
+            <Spinner
+                android:id="@+id/house_spinner_max_splits"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/house_double_soft"
+                android:entries="@array/house_split_options"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown">
+            </Spinner>
+
+            <Switch
+                android:id="@+id/house_split_aces_one"
+                android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/house_spinner_max_splits"
+                android:layout_alignParentRight="true"
+                android:switchMinWidth="70sp"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/house_spinner_max_splits"
+                android:textSize="17sp"
+                android:textColor="@color/colorG4"
+                android:text="@string/house_text_splitacesone"
+                android:paddingTop="5sp"/>
+
+            <Switch
+                android:id="@+id/house_split_aces_noblackjacks"
+                android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/house_split_aces_one"
+                android:layout_alignParentRight="true"
+                android:switchMinWidth="70sp"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/house_split_aces_one"
+                android:textSize="17sp"
+                android:textColor="@color/colorG4"
+                android:text="@string/house_text_splitacesnobjs"
+                android:paddingTop="5sp"/>
+
+            <Switch
+                android:id="@+id/house_aces_no_resplit"
+                android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/house_split_aces_noblackjacks"
+                android:layout_alignParentRight="true"
+                android:switchMinWidth="70sp"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/house_split_aces_noblackjacks"
+                android:textSize="17sp"
+                android:textColor="@color/colorG4"
+                android:text="@string/house_text_resplitaces"
+                android:paddingTop="5sp"/>
+
+            <Switch
+                android:id="@+id/house_surrender"
+                android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/house_aces_no_resplit"
+                android:layout_alignParentRight="true"
+                android:switchMinWidth="70sp"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/house_aces_no_resplit"
+                android:textSize="17sp"
+                android:textColor="@color/colorG4"
+                android:text="@string/house_text_surrender"
+                android:paddingTop="5sp"/>
+
+            <Switch
+                android:id="@+id/house_surrender_ace"
+                android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/house_surrender"
+                android:layout_alignParentRight="true"
+                android:switchMinWidth="70sp"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/house_surrender"
+                android:textSize="17sp"
+                android:textColor="@color/colorG4"
+                android:text="@string/house_text_surrendervsace"
+                android:paddingTop="5sp"/>
+
+            <Switch
+                android:id="@+id/house_surrender_early"
+                android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/house_surrender_ace"
+                android:layout_alignParentRight="true"
+                android:switchMinWidth="70sp"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/house_surrender_ace"
+                android:textSize="17sp"
+                android:textColor="@color/colorG4"
+                android:text="@string/house_text_surrenderearly"
+                android:paddingTop="5sp"/>
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

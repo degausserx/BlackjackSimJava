@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/popup_card"
+        android:title="Hit"/>
+
+    <item
+        android:id="@+id/popup_double"
+        android:title="Double"/>
+
+    <item
+        android:id="@+id/popup_double_stand"
+        android:title="Double / [X]"/>
+
+    <item
+        android:id="@+id/popup_stand"
+        android:title="Stand"/>
+
+    <item
+        android:id="@+id/popup_surrender"
+        android:title="Surrender"/>
+
+    <item
+        android:id="@+id/popup_surrender_stand"
+        android:title="Surrender / [X]"/>
+
+</menu>
