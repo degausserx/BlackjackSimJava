@@ -248,7 +248,7 @@ public class Simulation {
 
                     // double the bet
                     if (strategy.equals("D") || strategy.equals("E")) {
-                        if ((soft && !doubleonsoft) || cards > 2 || (split > 0 && player == 12)) {
+                        if ((soft && !doubleonsoft) || cards > 2 || (split > 0 && player == 12 && soft)) {
                             if (strategy.equals("E")) break;
                             else hit = 1;
                         }
